@@ -114,7 +114,6 @@ anims/still = SubResource( 3 )
 anims/walk = SubResource( 4 )
 
 [node name="weapon" type="Position2D" parent="."]
-position = Vector2( -7, 0 )
 __meta__ = {
 "_gizmo_extents_": 1.0
 }
