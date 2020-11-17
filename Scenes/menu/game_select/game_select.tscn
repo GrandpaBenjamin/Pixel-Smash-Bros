@@ -1,0 +1,130 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Fonts/kenny/mini_square.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Styles/smash_pressed.tres" type="StyleBox" id=2]
+[ext_resource path="res://Styles/smash.tres" type="StyleBox" id=3]
+[ext_resource path="res://Styles/games_more.tres" type="StyleBox" id=4]
+[ext_resource path="res://Styles/games_more_pressed.tres" type="StyleBox" id=5]
+[ext_resource path="res://Styles/vault.tres" type="StyleBox" id=6]
+[ext_resource path="res://Styles/vault_pressed.tres" type="StyleBox" id=7]
+[ext_resource path="res://Styles/online.tres" type="StyleBox" id=8]
+[ext_resource path="res://Styles/online_pressed.tres" type="StyleBox" id=9]
+[ext_resource path="res://Styles/quit_pressed.tres" type="StyleBox" id=10]
+[ext_resource path="res://Styles/quit.tres" type="StyleBox" id=11]
+[ext_resource path="res://Assets/png/Smash_Ball.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/menu/game_select/game_select.gd" type="Script" id=13]
+
+[node name="game_select" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 0.396851
+margin_bottom = 0.396851
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background" type="ColorRect" parent="."]
+margin_top = -0.396851
+margin_right = 384.0
+margin_bottom = 215.603
+color = Color( 0.172549, 0.172549, 0.172549, 0.878431 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SMASH" type="Button" parent="."]
+margin_top = -0.396851
+margin_right = 208.0
+margin_bottom = 119.603
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="RichTextLabel" parent="SMASH"]
+margin_left = 48.0
+margin_top = 80.0
+margin_right = 112.0
+margin_bottom = 104.0
+rect_scale = Vector2( 2, 2 )
+mouse_filter = 2
+custom_fonts/normal_font = ExtResource( 1 )
+text = " SMASH"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="logo" type="Sprite" parent="SMASH"]
+position = Vector2( 108, 48 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 12 )
+
+[node name="games&more" type="Button" parent="."]
+margin_left = 224.0
+margin_right = 384.0
+margin_bottom = 72.0
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 4 )
+custom_fonts/font = ExtResource( 1 )
+text = "Games & More"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vault" type="Button" parent="."]
+margin_left = 240.0
+margin_top = 80.0
+margin_right = 384.0
+margin_bottom = 136.0
+custom_styles/hover = ExtResource( 7 )
+custom_styles/pressed = ExtResource( 7 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = ExtResource( 1 )
+text = "Vault"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Online" type="Button" parent="."]
+margin_left = 224.0
+margin_top = 143.603
+margin_right = 384.0
+margin_bottom = 215.603
+custom_styles/hover = ExtResource( 9 )
+custom_styles/pressed = ExtResource( 9 )
+custom_styles/focus = ExtResource( 9 )
+custom_styles/normal = ExtResource( 8 )
+custom_fonts/font = ExtResource( 1 )
+text = "Online"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit" type="Button" parent="."]
+margin_top = 192.0
+margin_right = 40.0
+margin_bottom = 216.0
+custom_styles/hover = ExtResource( 10 )
+custom_styles/pressed = ExtResource( 10 )
+custom_styles/focus = ExtResource( 10 )
+custom_styles/normal = ExtResource( 11 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
+text = "quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="SMASH" to="." method="_on_SMASH_pressed"]
+[connection signal="pressed" from="games&more" to="." method="_on_gamesmore_pressed"]
+[connection signal="pressed" from="vault" to="." method="_on_vault_pressed"]
+[connection signal="pressed" from="Online" to="." method="_on_Online_pressed"]
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

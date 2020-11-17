@@ -6,3 +6,4 @@ func _init():
 	jump_key = "jump"
 	left_key = "left"
 	right_key = "right"
+
