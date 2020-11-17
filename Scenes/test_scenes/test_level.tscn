@@ -26,6 +26,9 @@ __meta__ = {
 position = Vector2( 192, 208 )
 shape = SubResource( 1 )
 
+[node name="pickle_rick" parent="." instance=ExtResource( 4 )]
+position = Vector2( 312, 56 )
+
 [node name="player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 56, 144 )
 
@@ -61,9 +64,6 @@ scale = Vector2( 10, 10 )
 texture = ExtResource( 2 )
 centered = false
 
-[node name="pickle_rick" parent="." instance=ExtResource( 4 )]
-position = Vector2( 312, 56 )
-
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2( -8, 104 )
 shape = SubResource( 2 )
@@ -71,5 +71,5 @@ shape = SubResource( 2 )
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
 position = Vector2( 392, 104 )
 shape = SubResource( 2 )
-[connection signal="shoot" from="player" to="." method="_on_player_shoot"]
 [connection signal="shoot" from="pickle_rick" to="." method="_on_pickle_rick_shoot"]
+[connection signal="shoot" from="player" to="." method="_on_player_shoot"]

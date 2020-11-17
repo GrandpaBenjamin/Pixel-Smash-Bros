@@ -22,6 +22,8 @@ func _on_cooldown_timeout():
 func _on_Area2D_body_entered(body):
 	if owner_name in body.get_name():
 		pass
+	elif "level" in body.get_name():
+		queue_free()
 	else:
 		body.get_hurt()
 		queue_free()
