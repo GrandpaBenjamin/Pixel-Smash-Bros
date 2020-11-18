@@ -1,0 +1,205 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Fonts/kenny/mini_square.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/pixel_mens/eggman.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/kenny/Kenney Mini Square.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scenes/menu/characterSelect/player_select.gd" type="Script" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.996078, 0.14902, 0.14902, 0.835294 )
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.34902, 0.968627, 0.239216, 0.85098 )
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.996078, 0.14902, 0.14902, 0.890196 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 1, 0, 0, 0.964706 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=4]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 8
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 8
+font_data = ExtResource( 3 )
+
+[node name="player_select" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bkg_top" type="ColorRect" parent="."]
+margin_right = 384.0
+margin_bottom = 32.0
+color = Color( 0.137255, 0.137255, 0.137255, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bkg" type="ColorRect" parent="."]
+margin_top = 32.0
+margin_right = 384.0
+margin_bottom = 216.0
+color = Color( 0.172549, 0.172549, 0.172549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+margin_right = 48.0
+margin_bottom = 24.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 1 )
+custom_styles/normal = SubResource( 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play" type="Button" parent="."]
+margin_left = 328.0
+margin_right = 384.0
+margin_bottom = 24.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 2 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "FIGHT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player1" type="PanelContainer" parent="."]
+margin_left = 24.0
+margin_top = 136.0
+margin_right = 88.0
+margin_bottom = 214.0
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="player1"]
+position = Vector2( 32, 46 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 2 )
+
+[node name="player2" type="PanelContainer" parent="."]
+margin_left = 112.0
+margin_top = 136.0
+margin_right = 176.0
+margin_bottom = 214.0
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="player2"]
+position = Vector2( 32, 46 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 2 )
+
+[node name="player3" type="PanelContainer" parent="."]
+margin_left = 208.0
+margin_top = 136.0
+margin_right = 274.0
+margin_bottom = 216.0
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="player3"]
+position = Vector2( 32, 46 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 2 )
+
+[node name="player4" type="PanelContainer" parent="."]
+margin_left = 296.0
+margin_top = 136.0
+margin_right = 362.0
+margin_bottom = 216.0
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="player4"]
+position = Vector2( 32, 46 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 2 )
+
+[node name="title1" type="RichTextLabel" parent="."]
+margin_left = 16.0
+margin_top = 140.0
+margin_right = 74.0
+margin_bottom = 212.0
+rect_scale = Vector2( 1.5, 1.5 )
+custom_fonts/normal_font = SubResource( 4 )
+text = "     player 1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title2" type="RichTextLabel" parent="."]
+margin_left = 103.0
+margin_top = 140.0
+margin_right = 161.0
+margin_bottom = 212.0
+rect_scale = Vector2( 1.5, 1.5 )
+custom_fonts/normal_font = SubResource( 5 )
+text = "     player 2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title3" type="RichTextLabel" parent="."]
+margin_left = 199.0
+margin_top = 140.0
+margin_right = 259.0
+margin_bottom = 214.0
+rect_scale = Vector2( 1.5, 1.5 )
+custom_fonts/normal_font = SubResource( 6 )
+text = "     player 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title4" type="RichTextLabel" parent="."]
+margin_left = 288.0
+margin_top = 140.0
+margin_right = 348.0
+margin_bottom = 214.0
+rect_scale = Vector2( 1.5, 1.5 )
+custom_fonts/normal_font = SubResource( 7 )
+text = "     player 4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="play" to="." method="_on_play_pressed"]

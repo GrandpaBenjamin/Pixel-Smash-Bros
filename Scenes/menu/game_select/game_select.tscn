@@ -28,7 +28,7 @@ __meta__ = {
 margin_top = -0.396851
 margin_right = 384.0
 margin_bottom = 215.603
-color = Color( 0.172549, 0.172549, 0.172549, 0.878431 )
+color = Color( 0.172549, 0.172549, 0.172549, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -59,7 +59,7 @@ __meta__ = {
 }
 
 [node name="logo" type="Sprite" parent="SMASH"]
-position = Vector2( 108, 48 )
+position = Vector2( 104, 48 )
 scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 12 )
 
