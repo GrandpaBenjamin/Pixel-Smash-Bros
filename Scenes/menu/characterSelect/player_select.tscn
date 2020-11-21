@@ -1,9 +1,13 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Fonts/kenny/mini_square.tres" type="DynamicFont" id=1]
-[ext_resource path="res://Assets/pixel_mens/eggman.png" type="Texture" id=2]
+[ext_resource path="res://Scenes/menu/characterSelect/scroips/player2.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/kenny/Kenney Mini Square.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scenes/menu/characterSelect/player_select.gd" type="Script" id=4]
+[ext_resource path="res://Scenes/menu/characterSelect/players/choosable_player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/menu/characterSelect/scroips/player1.gd" type="Script" id=6]
+[ext_resource path="res://Scenes/menu/characterSelect/scroips/player3.gd" type="Script" id=7]
+[ext_resource path="res://Scenes/menu/characterSelect/player4.gd" type="Script" id=8]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.996078, 0.14902, 0.14902, 0.835294 )
@@ -100,6 +104,7 @@ margin_top = 136.0
 margin_right = 88.0
 margin_bottom = 214.0
 custom_styles/panel = SubResource( 3 )
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -107,7 +112,6 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="player1"]
 position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
-texture = ExtResource( 2 )
 
 [node name="player2" type="PanelContainer" parent="."]
 margin_left = 112.0
@@ -115,6 +119,7 @@ margin_top = 136.0
 margin_right = 176.0
 margin_bottom = 214.0
 custom_styles/panel = SubResource( 3 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -122,7 +127,6 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="player2"]
 position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
-texture = ExtResource( 2 )
 
 [node name="player3" type="PanelContainer" parent="."]
 margin_left = 208.0
@@ -130,6 +134,7 @@ margin_top = 136.0
 margin_right = 274.0
 margin_bottom = 216.0
 custom_styles/panel = SubResource( 3 )
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -137,7 +142,6 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="player3"]
 position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
-texture = ExtResource( 2 )
 
 [node name="player4" type="PanelContainer" parent="."]
 margin_left = 296.0
@@ -145,6 +149,7 @@ margin_top = 136.0
 margin_right = 362.0
 margin_bottom = 216.0
 custom_styles/panel = SubResource( 3 )
+script = ExtResource( 8 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -152,7 +157,6 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="player4"]
 position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
-texture = ExtResource( 2 )
 
 [node name="title1" type="RichTextLabel" parent="."]
 margin_left = 16.0
@@ -201,5 +205,207 @@ text = "     player 4"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="choosable_player" parent="." instance=ExtResource( 5 )]
+margin_left = 24.0
+margin_top = 40.0
+margin_right = 12.192
+margin_bottom = 28.024
+sprite = "eggman"
+
+[node name="choosable_player2" parent="." instance=ExtResource( 5 )]
+margin_left = 56.0
+margin_top = 40.0
+margin_right = 44.192
+margin_bottom = 28.024
+sprite = "pickle_rick"
+
+[node name="choosable_player3" parent="." instance=ExtResource( 5 )]
+margin_left = 88.0
+margin_top = 40.0
+margin_right = 76.192
+margin_bottom = 28.024
+sprite = "bowser"
+
+[node name="choosable_player4" parent="." instance=ExtResource( 5 )]
+margin_left = 120.0
+margin_top = 40.0
+margin_right = 108.192
+margin_bottom = 28.024
+sprite = "sonic"
+
+[node name="choosable_player5" parent="." instance=ExtResource( 5 )]
+margin_left = 152.0
+margin_top = 40.0
+margin_right = 140.192
+margin_bottom = 28.024
+
+[node name="choosable_player6" parent="." instance=ExtResource( 5 )]
+margin_left = 184.0
+margin_top = 40.0
+margin_right = 172.192
+margin_bottom = 28.024
+
+[node name="choosable_player7" parent="." instance=ExtResource( 5 )]
+margin_left = 216.0
+margin_top = 40.0
+margin_right = 204.192
+margin_bottom = 28.024
+
+[node name="choosable_player8" parent="." instance=ExtResource( 5 )]
+margin_left = 248.0
+margin_top = 40.0
+margin_right = 236.192
+margin_bottom = 28.024
+
+[node name="choosable_player9" parent="." instance=ExtResource( 5 )]
+margin_left = 280.0
+margin_top = 40.0
+margin_right = 268.192
+margin_bottom = 28.024
+
+[node name="choosable_player10" parent="." instance=ExtResource( 5 )]
+margin_left = 312.0
+margin_top = 40.0
+margin_right = 300.192
+margin_bottom = 28.024
+
+[node name="choosable_player11" parent="." instance=ExtResource( 5 )]
+margin_left = 344.0
+margin_top = 40.0
+margin_right = 332.192
+margin_bottom = 28.024
+
+[node name="choosable_player12" parent="." instance=ExtResource( 5 )]
+margin_left = 24.0
+margin_top = 72.0
+margin_right = 12.192
+margin_bottom = 60.024
+
+[node name="choosable_player13" parent="." instance=ExtResource( 5 )]
+margin_left = 56.0
+margin_top = 72.0
+margin_right = 44.192
+margin_bottom = 60.024
+
+[node name="choosable_player14" parent="." instance=ExtResource( 5 )]
+margin_left = 88.0
+margin_top = 72.0
+margin_right = 76.192
+margin_bottom = 60.024
+
+[node name="choosable_player15" parent="." instance=ExtResource( 5 )]
+margin_left = 120.0
+margin_top = 72.0
+margin_right = 108.192
+margin_bottom = 60.024
+
+[node name="choosable_player16" parent="." instance=ExtResource( 5 )]
+margin_left = 152.0
+margin_top = 72.0
+margin_right = 140.192
+margin_bottom = 60.024
+
+[node name="choosable_player17" parent="." instance=ExtResource( 5 )]
+margin_left = 184.0
+margin_top = 72.0
+margin_right = 172.192
+margin_bottom = 60.024
+
+[node name="choosable_player18" parent="." instance=ExtResource( 5 )]
+margin_left = 216.0
+margin_top = 72.0
+margin_right = 204.192
+margin_bottom = 60.024
+
+[node name="choosable_player19" parent="." instance=ExtResource( 5 )]
+margin_left = 248.0
+margin_top = 72.0
+margin_right = 236.192
+margin_bottom = 60.024
+
+[node name="choosable_player20" parent="." instance=ExtResource( 5 )]
+margin_left = 280.0
+margin_top = 72.0
+margin_right = 268.192
+margin_bottom = 60.024
+
+[node name="choosable_player21" parent="." instance=ExtResource( 5 )]
+margin_left = 312.0
+margin_top = 72.0
+margin_right = 300.192
+margin_bottom = 60.024
+
+[node name="choosable_player22" parent="." instance=ExtResource( 5 )]
+margin_left = 344.0
+margin_top = 72.0
+margin_right = 332.192
+margin_bottom = 60.024
+
+[node name="choosable_player23" parent="." instance=ExtResource( 5 )]
+margin_left = 344.0
+margin_top = 104.0
+margin_right = 332.192
+margin_bottom = 92.024
+
+[node name="choosable_player24" parent="." instance=ExtResource( 5 )]
+margin_left = 312.0
+margin_top = 104.0
+margin_right = 300.192
+margin_bottom = 92.024
+
+[node name="choosable_player25" parent="." instance=ExtResource( 5 )]
+margin_left = 280.0
+margin_top = 104.0
+margin_right = 268.192
+margin_bottom = 92.024
+
+[node name="choosable_player26" parent="." instance=ExtResource( 5 )]
+margin_left = 248.0
+margin_top = 104.0
+margin_right = 236.192
+margin_bottom = 92.024
+
+[node name="choosable_player27" parent="." instance=ExtResource( 5 )]
+margin_left = 216.0
+margin_top = 104.0
+margin_right = 204.192
+margin_bottom = 92.024
+
+[node name="choosable_player28" parent="." instance=ExtResource( 5 )]
+margin_left = 184.0
+margin_top = 104.0
+margin_right = 172.192
+margin_bottom = 92.024
+
+[node name="choosable_player29" parent="." instance=ExtResource( 5 )]
+margin_left = 152.0
+margin_top = 104.0
+margin_right = 140.192
+margin_bottom = 92.024
+
+[node name="choosable_player30" parent="." instance=ExtResource( 5 )]
+margin_left = 120.0
+margin_top = 104.0
+margin_right = 108.192
+margin_bottom = 92.024
+
+[node name="choosable_player31" parent="." instance=ExtResource( 5 )]
+margin_left = 88.0
+margin_top = 104.0
+margin_right = 76.192
+margin_bottom = 92.024
+
+[node name="choosable_player32" parent="." instance=ExtResource( 5 )]
+margin_left = 56.0
+margin_top = 104.0
+margin_right = 44.192
+margin_bottom = 92.024
+
+[node name="choosable_player33" parent="." instance=ExtResource( 5 )]
+margin_left = 24.0
+margin_top = 104.0
+margin_right = 12.192
+margin_bottom = 92.024
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="play" to="." method="_on_play_pressed"]
