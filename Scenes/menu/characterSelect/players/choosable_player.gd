@@ -4,28 +4,34 @@ export var sprite = ""
 
 
 func _ready():
-	if sprite == "eggman":
+	if sprite == "eggman" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.eggman
-	elif sprite == "pickle_rick":
+	elif sprite == "pickle_rick" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.pickle_rick
-	elif sprite == "bowser":
+	elif sprite == "bowser" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.bowser
-	elif sprite == "sonic":
+	elif sprite == "sonic" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.sonic
-	elif sprite == "donkey_kong":
+	elif sprite == "donkey_kong" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.donkey_kong
-	elif sprite == "cooper_trooper":
+	elif sprite == "cooper_trooper" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.cooper_trooper
-	elif sprite == "adventure_finn":
+	elif sprite == "adventure_finn" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.adventure_finn
-	elif sprite == "homer":
+	elif sprite == "homer" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.homer
-	elif sprite == "knuckles":
+	elif sprite == "knuckles" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.knuckles
-	elif sprite == "krusty":
+	elif sprite == "krusty" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.krusty
-	elif sprite == "link":
+	elif sprite == "link" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.link
+	elif sprite == "zelda"and Unlockables.isUnlocked.get(sprite):
+		$Sprite.texture = Globals.zelda
+	elif sprite == "waluigi" and Unlockables.isUnlocked.get(sprite):
+		$Sprite.texture = Globals.waluigi
+	elif sprite == "wario" and Unlockables.isUnlocked.get(sprite):
+		$Sprite.texture = Globals.wario
 	else:
 		queue_free()
 

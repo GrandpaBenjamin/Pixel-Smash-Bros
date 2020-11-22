@@ -26,6 +26,9 @@ var homer = preload("res://Assets/pixel_mens/homer.png")
 var knuckles = preload("res://Assets/pixel_mens/knuckles.png")
 var krusty = preload("res://Assets/pixel_mens/krusty.png")
 var link = preload("res://Assets/pixel_mens/zelda.png")
+var zelda = preload("res://Assets/pixel_mens/zelda_women.png")
+var waluigi = preload("res://Assets/pixel_mens/walugi.png")
+var wario = preload("res://Assets/pixel_mens/wario.png")
 
 var conv = {
 	"eggman": eggman,
@@ -39,6 +42,9 @@ var conv = {
 	"kunckles": knuckles,
 	"krusty": krusty,
 	"link": link,
+	"zelda": zelda,
+	"waluigi": waluigi,
+	"wario": wario,
 }
 
 

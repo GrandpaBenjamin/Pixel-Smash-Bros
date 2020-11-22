@@ -2,7 +2,6 @@ extends Control
 
 
 func _on_SMASH_pressed():
-	print("SMASH")
 	get_tree().change_scene("res://Scenes/menu/characterSelect/player_select.tscn")
 
 func _on_gamesmore_pressed():

@@ -59,7 +59,7 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[sub_resource type="StyleBoxFlat" id=11]
+[sub_resource type="StyleBoxFlat" id=9]
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 border_width_left = 3
 border_width_top = 3
@@ -71,9 +71,9 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
-[sub_resource type="StyleBoxEmpty" id=9]
-
 [sub_resource type="StyleBoxEmpty" id=10]
+
+[sub_resource type="StyleBoxEmpty" id=11]
 
 [node name="player_select" type="Control"]
 anchor_right = 1.0
@@ -296,9 +296,9 @@ margin_top = 151.0
 margin_right = 73.0
 margin_bottom = 212.0
 custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 11 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -309,9 +309,9 @@ margin_top = 151.0
 margin_right = 132.0
 margin_bottom = 212.0
 custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 11 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -322,9 +322,9 @@ margin_top = 151.0
 margin_right = 190.0
 margin_bottom = 212.0
 custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 11 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -335,9 +335,9 @@ margin_top = 151.0
 margin_right = 247.0
 margin_bottom = 212.0
 custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 11 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -348,9 +348,9 @@ margin_top = 151.0
 margin_right = 305.0
 margin_bottom = 212.0
 custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 11 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -361,9 +361,9 @@ margin_top = 151.0
 margin_right = 362.0
 margin_bottom = 212.0
 custom_styles/hover = SubResource( 8 )
-custom_styles/pressed = SubResource( 11 )
-custom_styles/focus = SubResource( 9 )
-custom_styles/normal = SubResource( 10 )
+custom_styles/pressed = SubResource( 9 )
+custom_styles/focus = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -380,21 +380,21 @@ margin_left = 56.0
 margin_top = 40.0
 margin_right = 44.192
 margin_bottom = 28.024
-sprite = "pickle_rick"
+sprite = "zelda"
 
 [node name="choosable_player3" parent="." instance=ExtResource( 5 )]
 margin_left = 88.0
 margin_top = 40.0
 margin_right = 76.192
 margin_bottom = 28.024
-sprite = "bowser"
+sprite = "link"
 
 [node name="choosable_player4" parent="." instance=ExtResource( 5 )]
 margin_left = 120.0
 margin_top = 40.0
 margin_right = 108.192
 margin_bottom = 28.024
-sprite = "sonic"
+sprite = "bowser"
 
 [node name="choosable_player5" parent="." instance=ExtResource( 5 )]
 margin_left = 152.0
@@ -443,19 +443,21 @@ margin_left = 344.0
 margin_top = 40.0
 margin_right = 332.192
 margin_bottom = 28.024
-sprite = "link"
+sprite = "sonic"
 
 [node name="choosable_player12" parent="." instance=ExtResource( 5 )]
 margin_left = 24.0
 margin_top = 72.0
 margin_right = 12.192
 margin_bottom = 60.024
+sprite = "waluigi"
 
 [node name="choosable_player13" parent="." instance=ExtResource( 5 )]
 margin_left = 56.0
 margin_top = 72.0
 margin_right = 44.192
 margin_bottom = 60.024
+sprite = "wario"
 
 [node name="choosable_player14" parent="." instance=ExtResource( 5 )]
 margin_left = 88.0
