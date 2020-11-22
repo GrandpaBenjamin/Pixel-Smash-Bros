@@ -10,3 +10,19 @@ func _process(delta):
 		$Sprite.texture = Globals.bowser
 	elif Globals.player2 == "sonic":
 		$Sprite.texture = Globals.sonic
+	elif Globals.player2 == "donkey_kong":
+		$Sprite.texture = Globals.donkey_kong
+	elif Globals.player2 == "cooper_trooper":
+		$Sprite.texture = Globals.cooper_trooper
+	elif Globals.player2 == "adventure_finn":
+		$Sprite.texture = Globals.adventure_finn
+	elif Globals.player2 == "homer":
+		$Sprite.texture = Globals.homer
+	elif Globals.player2 == "knuckles":
+		$Sprite.texture = Globals.knuckles
+	elif Globals.player2 == "krusty":
+		$Sprite.texture = Globals.krusty
+	elif Globals.player2 == "link":
+		$Sprite.texture = Globals.link
+	else:
+		$Sprite.texture = preload("res://Assets/blank.png")

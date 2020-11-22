@@ -1,9 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Scenes/player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/floor/idk_floor.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/test_scenes/test_level.gd" type="Script" id=3]
-[ext_resource path="res://Scenes/player/secret/pickle_rick.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 192, 8 )
@@ -25,14 +23,6 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 192, 208 )
 shape = SubResource( 1 )
-
-[node name="pickle_rick" parent="." instance=ExtResource( 4 )]
-position = Vector2( 312, 56 )
-
-[node name="player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 56, 144 )
-
-[node name="bullets" type="Node2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, 160 )
@@ -71,5 +61,23 @@ shape = SubResource( 2 )
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
 position = Vector2( 392, 104 )
 shape = SubResource( 2 )
-[connection signal="shoot" from="pickle_rick" to="." method="_on_pickle_rick_shoot"]
-[connection signal="shoot" from="player" to="." method="_on_player_shoot"]
+
+[node name="spawn_points" type="Node2D" parent="."]
+
+[node name="pos1" type="Position2D" parent="spawn_points"]
+position = Vector2( 25.3984, 175.805 )
+
+[node name="pos2" type="Position2D" parent="spawn_points"]
+position = Vector2( 92.0693, 151.597 )
+
+[node name="pos3" type="Position2D" parent="spawn_points"]
+position = Vector2( 359.943, 169.455 )
+
+[node name="pos4" type="Position2D" parent="spawn_points"]
+position = Vector2( 257.953, 113.499 )
+
+[node name="pos5" type="Position2D" parent="spawn_points"]
+position = Vector2( 180.17, 179.773 )
+
+[node name="pos6" type="Position2D" parent="spawn_points"]
+position = Vector2( 313.909, 33.3354 )

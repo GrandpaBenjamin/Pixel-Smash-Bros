@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/pixel_mens/sprite_sheets/eggman_anim-Sheet.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/player/player.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/player/player6.gd" type="Script" id=2]
 
 [sub_resource type="Animation" id=1]
 resource_name = "idle"
@@ -70,7 +70,7 @@ tracks/0/keys = {
 "values": [ 10, 11, 12, 13 ]
 }
 
-[node name="player" type="KinematicBody2D"]
+[node name="player6" type="KinematicBody2D"]
 scale = Vector2( 2, 2 )
 script = ExtResource( 2 )
 

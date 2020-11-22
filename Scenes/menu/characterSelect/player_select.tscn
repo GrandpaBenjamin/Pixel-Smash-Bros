@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Fonts/kenny/mini_square.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Scenes/menu/characterSelect/scroips/player2.gd" type="Script" id=2]
@@ -7,7 +7,9 @@
 [ext_resource path="res://Scenes/menu/characterSelect/players/choosable_player.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/menu/characterSelect/scroips/player1.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/menu/characterSelect/scroips/player3.gd" type="Script" id=7]
-[ext_resource path="res://Scenes/menu/characterSelect/player4.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/menu/characterSelect/scroips/player4.gd" type="Script" id=8]
+[ext_resource path="res://Scenes/menu/characterSelect/scroips/player6.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/menu/characterSelect/scroips/player5.gd" type="Script" id=10]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.996078, 0.14902, 0.14902, 0.835294 )
@@ -44,6 +46,34 @@ font_data = ExtResource( 3 )
 [sub_resource type="DynamicFont" id=7]
 size = 8
 font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.145098, 0.807843, 0.768627, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.341176, 0.8, 0.258824, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxEmpty" id=10]
 
 [node name="player_select" type="Control"]
 anchor_right = 1.0
@@ -100,9 +130,10 @@ __meta__ = {
 
 [node name="player1" type="PanelContainer" parent="."]
 margin_left = 24.0
-margin_top = 136.0
+margin_top = 152.0
 margin_right = 88.0
-margin_bottom = 214.0
+margin_bottom = 230.0
+rect_scale = Vector2( 0.75, 0.75 )
 custom_styles/panel = SubResource( 3 )
 script = ExtResource( 6 )
 __meta__ = {
@@ -114,10 +145,11 @@ position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
 
 [node name="player2" type="PanelContainer" parent="."]
-margin_left = 112.0
-margin_top = 136.0
-margin_right = 176.0
-margin_bottom = 214.0
+margin_left = 83.0
+margin_top = 152.0
+margin_right = 147.0
+margin_bottom = 230.0
+rect_scale = Vector2( 0.75, 0.75 )
 custom_styles/panel = SubResource( 3 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -129,10 +161,11 @@ position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
 
 [node name="player3" type="PanelContainer" parent="."]
-margin_left = 208.0
-margin_top = 136.0
-margin_right = 274.0
-margin_bottom = 216.0
+margin_left = 140.0
+margin_top = 152.0
+margin_right = 206.0
+margin_bottom = 232.0
+rect_scale = Vector2( 0.75, 0.75 )
 custom_styles/panel = SubResource( 3 )
 script = ExtResource( 7 )
 __meta__ = {
@@ -144,10 +177,11 @@ position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
 
 [node name="player4" type="PanelContainer" parent="."]
-margin_left = 296.0
-margin_top = 136.0
-margin_right = 362.0
-margin_bottom = 216.0
+margin_left = 197.0
+margin_top = 152.0
+margin_right = 263.0
+margin_bottom = 232.0
+rect_scale = Vector2( 0.75, 0.75 )
 custom_styles/panel = SubResource( 3 )
 script = ExtResource( 8 )
 __meta__ = {
@@ -158,12 +192,43 @@ __meta__ = {
 position = Vector2( 32, 46 )
 scale = Vector2( 6, 6 )
 
+[node name="player5" type="PanelContainer" parent="."]
+margin_left = 255.0
+margin_top = 152.0
+margin_right = 321.0
+margin_bottom = 232.0
+rect_scale = Vector2( 0.75, 0.75 )
+custom_styles/panel = SubResource( 3 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="player5"]
+position = Vector2( 32, 46 )
+scale = Vector2( 6, 6 )
+
+[node name="player6" type="PanelContainer" parent="."]
+margin_left = 312.0
+margin_top = 152.0
+margin_right = 378.0
+margin_bottom = 232.0
+rect_scale = Vector2( 0.75, 0.75 )
+custom_styles/panel = SubResource( 3 )
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="player6"]
+position = Vector2( 32, 46 )
+scale = Vector2( 6, 6 )
+
 [node name="title1" type="RichTextLabel" parent="."]
-margin_left = 16.0
-margin_top = 140.0
-margin_right = 74.0
-margin_bottom = 212.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 21.0
+margin_top = 155.0
+margin_right = 79.0
+margin_bottom = 227.0
 custom_fonts/normal_font = SubResource( 4 )
 text = "     player 1"
 __meta__ = {
@@ -171,11 +236,10 @@ __meta__ = {
 }
 
 [node name="title2" type="RichTextLabel" parent="."]
-margin_left = 103.0
-margin_top = 140.0
-margin_right = 161.0
-margin_bottom = 212.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 79.0
+margin_top = 155.0
+margin_right = 137.0
+margin_bottom = 227.0
 custom_fonts/normal_font = SubResource( 5 )
 text = "     player 2"
 __meta__ = {
@@ -183,11 +247,10 @@ __meta__ = {
 }
 
 [node name="title3" type="RichTextLabel" parent="."]
-margin_left = 199.0
-margin_top = 140.0
-margin_right = 259.0
-margin_bottom = 214.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 136.0
+margin_top = 155.0
+margin_right = 196.0
+margin_bottom = 229.0
 custom_fonts/normal_font = SubResource( 6 )
 text = "     player 3"
 __meta__ = {
@@ -195,13 +258,112 @@ __meta__ = {
 }
 
 [node name="title4" type="RichTextLabel" parent="."]
-margin_left = 288.0
-margin_top = 140.0
-margin_right = 348.0
-margin_bottom = 214.0
-rect_scale = Vector2( 1.5, 1.5 )
+margin_left = 194.0
+margin_top = 155.0
+margin_right = 254.0
+margin_bottom = 229.0
 custom_fonts/normal_font = SubResource( 7 )
 text = "     player 4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title5" type="RichTextLabel" parent="."]
+margin_left = 260.0
+margin_top = 155.0
+margin_right = 320.0
+margin_bottom = 229.0
+custom_fonts/normal_font = SubResource( 7 )
+text = " player 5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="title6" type="RichTextLabel" parent="."]
+margin_left = 317.0
+margin_top = 155.0
+margin_right = 377.0
+margin_bottom = 229.0
+custom_fonts/normal_font = SubResource( 7 )
+text = " player 6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player1_button" type="Button" parent="."]
+margin_left = 23.0
+margin_top = 151.0
+margin_right = 73.0
+margin_bottom = 212.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player2_button" type="Button" parent="."]
+margin_left = 82.0
+margin_top = 151.0
+margin_right = 132.0
+margin_bottom = 212.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player3_button" type="Button" parent="."]
+margin_left = 139.0
+margin_top = 151.0
+margin_right = 190.0
+margin_bottom = 212.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player4_button" type="Button" parent="."]
+margin_left = 196.0
+margin_top = 151.0
+margin_right = 247.0
+margin_bottom = 212.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player5_button" type="Button" parent="."]
+margin_left = 254.0
+margin_top = 151.0
+margin_right = 305.0
+margin_bottom = 212.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player6_button" type="Button" parent="."]
+margin_left = 311.0
+margin_top = 151.0
+margin_right = 362.0
+margin_bottom = 212.0
+custom_styles/hover = SubResource( 8 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/focus = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -239,42 +401,49 @@ margin_left = 152.0
 margin_top = 40.0
 margin_right = 140.192
 margin_bottom = 28.024
+sprite = "donkey_kong"
 
 [node name="choosable_player6" parent="." instance=ExtResource( 5 )]
 margin_left = 184.0
 margin_top = 40.0
 margin_right = 172.192
 margin_bottom = 28.024
+sprite = "cooper_trooper"
 
 [node name="choosable_player7" parent="." instance=ExtResource( 5 )]
 margin_left = 216.0
 margin_top = 40.0
 margin_right = 204.192
 margin_bottom = 28.024
+sprite = "adventure_finn"
 
 [node name="choosable_player8" parent="." instance=ExtResource( 5 )]
 margin_left = 248.0
 margin_top = 40.0
 margin_right = 236.192
 margin_bottom = 28.024
+sprite = "homer"
 
 [node name="choosable_player9" parent="." instance=ExtResource( 5 )]
 margin_left = 280.0
 margin_top = 40.0
 margin_right = 268.192
 margin_bottom = 28.024
+sprite = "krusty"
 
 [node name="choosable_player10" parent="." instance=ExtResource( 5 )]
 margin_left = 312.0
 margin_top = 40.0
 margin_right = 300.192
 margin_bottom = 28.024
+sprite = "knuckles"
 
 [node name="choosable_player11" parent="." instance=ExtResource( 5 )]
 margin_left = 344.0
 margin_top = 40.0
 margin_right = 332.192
 margin_bottom = 28.024
+sprite = "link"
 
 [node name="choosable_player12" parent="." instance=ExtResource( 5 )]
 margin_left = 24.0
@@ -409,3 +578,9 @@ margin_right = 12.192
 margin_bottom = 92.024
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="player1_button" to="." method="_on_player1_button_pressed"]
+[connection signal="pressed" from="player2_button" to="." method="_on_player1_button2_pressed"]
+[connection signal="pressed" from="player3_button" to="." method="_on_player3_button_pressed"]
+[connection signal="pressed" from="player4_button" to="." method="_on_player4_button_pressed"]
+[connection signal="pressed" from="player5_button" to="." method="_on_player5_button_pressed"]
+[connection signal="pressed" from="player6_button" to="." method="_on_player6_button_pressed"]
