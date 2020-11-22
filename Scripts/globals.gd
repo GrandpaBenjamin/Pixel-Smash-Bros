@@ -47,7 +47,7 @@ var conv = {
 	"wario": wario,
 }
 
-
+var save_num = 0
 
 #------functions--------
 
@@ -55,9 +55,43 @@ func set_vars():
 	players = [player1,player2,player3,player4,player5,player6]
 	players_rev = [player6,player5,player4,player3,player2,player1]
 
+func perhaps_save():
+	save_num += 1
+	if save_num % 7 == 0:
+		save()
+		#print("saved")
+
 func _process(delta):
 	set_vars()
+	perhaps_save()
 	if Input.is_action_just_pressed("fullscreen") and not OS.window_fullscreen:
 		OS.window_fullscreen = true
 	elif Input.is_action_just_pressed("fullscreen") and OS.window_fullscreen:
 		OS.window_fullscreen = false
+
+#-------save_and_load stuff--------
+
+const FILE_NAME = "user://game-data.txt"
+
+#onready var data = {
+#	"unlocked_chars": Unlockables.isUnlocked,
+#}
+
+func save():
+	var file = File.new()
+	file.open(FILE_NAME, File.WRITE)
+	file.store_string(to_json(Unlockables.isUnlocked))
+	file.close()
+
+func load():
+	var file = File.new()
+	if file.file_exists(FILE_NAME):
+		file.open(FILE_NAME, File.READ)
+		var data = parse_json(file.get_as_text())
+		file.close()
+		if typeof(data) == TYPE_DICTIONARY:
+			Unlockables.isUnlocked = data
+		else:
+			printerr("Corrupted data!")
+	else:
+		printerr("No saved data!")
