@@ -24,42 +24,42 @@ func spawn_players():
 	if Globals.player1 != "":
 		var pla1 = player1.instance()
 		pla1.skin = Globals.conv.get(Globals.player1)
-		pla1.alpha = true # -----get rid of this line ------------
+#		pla1.alpha = true # -----get rid of this line ------------
 		pla1.position = choose_pos()
 		used_positions.append(pla1.position)
 		add_child(pla1)
 	if Globals.player2 != "":
 		var pla2 = player2.instance()
 		pla2.skin = Globals.conv.get(Globals.player2)
-		pla2.alpha = true # -----get rid of this line ------------
+#		pla2.alpha = true # -----get rid of this line ------------
 		pla2.position = choose_pos()
 		used_positions.append(pla2.position)
 		add_child(pla2)
 	if Globals.player3 != "":
 		var pla3 = player3.instance()
 		pla3.skin = Globals.conv.get(Globals.player3)
-		pla3.alpha = true # -----get rid of this line ------------
+#		pla3.alpha = true # -----get rid of this line ------------
 		pla3.position = choose_pos()
 		used_positions.append(pla3.position)
 		add_child(pla3)
 	if Globals.player4 != "":
 		var pla4 = player4.instance()
 		pla4.skin = Globals.conv.get(Globals.player4)
-		pla4.alpha = true # -----get rid of this line ------------
+#		pla4.alpha = true # -----get rid of this line ------------
 		pla4.position = choose_pos()
 		used_positions.append(pla4.position)
 		add_child(pla4)
 	if Globals.player5 != "":
 		var pla5 = player5.instance()
 		pla5.skin = Globals.conv.get(Globals.player5)
-		pla5.alpha = true # -----get rid of this line ------------
+#		pla5.alpha = true # -----get rid of this line ------------
 		pla5.position = choose_pos()
 		used_positions.append(pla5.position)
 		add_child(pla5)
 	if Globals.player6 != "":
 		var pla6 = player6.instance()
 		pla6.skin = Globals.conv.get(Globals.player6)
-		pla6.alpha = true # -----get rid of this line ------------
+#		pla6.alpha = true # -----get rid of this line ------------
 		pla6.position = choose_pos()
 		used_positions.append(pla6.position)
 		add_child(pla6)

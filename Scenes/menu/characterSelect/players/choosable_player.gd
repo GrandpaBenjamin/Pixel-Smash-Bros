@@ -14,6 +14,7 @@ func _ready():
 		$Sprite.texture = Globals.sonic
 	elif sprite == "donkey_kong" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.donkey_kong
+		$Sprite.position.y -= 1
 	elif sprite == "cooper_trooper" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.cooper_trooper
 	elif sprite == "adventure_finn" and Unlockables.isUnlocked.get(sprite):
@@ -28,12 +29,14 @@ func _ready():
 		$Sprite.texture = Globals.link
 	elif sprite == "zelda"and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.zelda
+		$Sprite.position.y -= 1
 	elif sprite == "waluigi" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.waluigi
 	elif sprite == "wario" and Unlockables.isUnlocked.get(sprite):
 		$Sprite.texture = Globals.wario
 	else:
 		queue_free()
+	$Sprite.hframes = 16
 
 
 

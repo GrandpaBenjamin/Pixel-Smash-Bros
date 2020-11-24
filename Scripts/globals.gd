@@ -15,20 +15,20 @@ var players_rev = [player6,player5,player4,player3,player2,player1]
 
 #------player_png_locations--------
 
-var eggman = preload("res://Assets/pixel_mens/eggman.png")
+var eggman = preload("res://Assets/pixel_mens/sprite_sheets/eggman_anim-Sheet.png")
 var pickle_rick = preload("res://Assets/pixel_mens/secret/pickle_rick.png")
-var bowser = preload("res://Assets/pixel_mens/bowser.png")
-var sonic = preload("res://Assets/pixel_mens/sonic.png")
-var donkey_kong = preload("res://Assets/pixel_mens/donkey_kong.png")
-var cooper_trooper = preload("res://Assets/pixel_mens/cooper_trooper.png")
-var adventure_finn = preload("res://Assets/pixel_mens/finn.png")
-var homer = preload("res://Assets/pixel_mens/homer.png")
-var knuckles = preload("res://Assets/pixel_mens/knuckles.png")
-var krusty = preload("res://Assets/pixel_mens/krusty.png")
-var link = preload("res://Assets/pixel_mens/zelda.png")
-var zelda = preload("res://Assets/pixel_mens/zelda_women.png")
-var waluigi = preload("res://Assets/pixel_mens/walugi.png")
-var wario = preload("res://Assets/pixel_mens/wario.png")
+var bowser = preload("res://Assets/pixel_mens/sprite_sheets/bowser-Sheet.png")
+var sonic = preload("res://Assets/pixel_mens/sprite_sheets/sonic-Sheet.png")
+var donkey_kong = preload("res://Assets/pixel_mens/sprite_sheets/donkey_kong-Sheet.png")
+var cooper_trooper = preload("res://Assets/pixel_mens/sprite_sheets/cooper_trooper-Sheet.png")
+var adventure_finn = preload("res://Assets/pixel_mens/sprite_sheets/finn-Sheet.png")
+var homer = preload("res://Assets/pixel_mens/sprite_sheets/homer-Sheet.png")
+var knuckles = preload("res://Assets/pixel_mens/sprite_sheets/knuckles-Sheet.png")
+var krusty = preload("res://Assets/pixel_mens/sprite_sheets/krusty-Sheet.png")
+var link = preload("res://Assets/pixel_mens/sprite_sheets/zelda-Sheet.png")
+var zelda = preload("res://Assets/pixel_mens/sprite_sheets/zelda_women-Sheet.png")
+var waluigi = preload("res://Assets/pixel_mens/sprite_sheets/walugi-Sheet.png")
+var wario = preload("res://Assets/pixel_mens/sprite_sheets/wario-Sheet.png")
 
 var conv = {
 	"eggman": eggman,
@@ -54,6 +54,12 @@ var save_num = 0
 func set_vars():
 	players = [player1,player2,player3,player4,player5,player6]
 	players_rev = [player6,player5,player4,player3,player2,player1]
+
+func change_pos(name):
+	if name == "zelda" or name == "donkey_kong":
+		return true
+	else:
+		return false
 
 func perhaps_save():
 	save_num += 1

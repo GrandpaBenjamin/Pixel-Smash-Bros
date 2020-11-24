@@ -10,7 +10,7 @@ var isUnlocked = {
 	"cooper_trooper": true,
 	"adventure_finn": false,
 	"homer": false,
-	"kunckles": false,
+	"knuckles": false,
 	"krusty": false,
 	"link": true,
 	"zelda": true,
