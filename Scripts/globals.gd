@@ -29,6 +29,10 @@ var link = preload("res://Assets/pixel_mens/sprite_sheets/zelda-Sheet.png")
 var zelda = preload("res://Assets/pixel_mens/sprite_sheets/zelda_women-Sheet.png")
 var waluigi = preload("res://Assets/pixel_mens/sprite_sheets/walugi-Sheet.png")
 var wario = preload("res://Assets/pixel_mens/sprite_sheets/wario-Sheet.png")
+var tails = preload("res://Assets/pixel_mens/sprite_sheets/tails-Sheet.png")
+var princess_bubblegum = preload("res://Assets/pixel_mens/sprite_sheets/princess_bubblegum-Sheet.png")
+var mario = preload("res://Assets/pixel_mens/sprite_sheets/mario-Sheet.png")
+var luigi = preload("res://Assets/pixel_mens/sprite_sheets/luigi-Sheet.png")
 
 var conv = {
 	"eggman": eggman,
@@ -45,9 +49,14 @@ var conv = {
 	"zelda": zelda,
 	"waluigi": waluigi,
 	"wario": wario,
+	"tails": tails,
+	"princess_bubblegum": princess_bubblegum,
+	"mario": mario,
+	"luigi": luigi,
 }
 
 var save_num = 0
+var change_pos_list = ["zelda","donkey_kong","princess_bubblegum"]
 
 #------functions--------
 
@@ -56,7 +65,7 @@ func set_vars():
 	players_rev = [player6,player5,player4,player3,player2,player1]
 
 func change_pos(name):
-	if name == "zelda" or name == "donkey_kong":
+	if name in change_pos_list:
 		return true
 	else:
 		return false

@@ -464,24 +464,28 @@ margin_left = 88.0
 margin_top = 72.0
 margin_right = 76.192
 margin_bottom = 60.024
+sprite = "mario"
 
 [node name="choosable_player15" parent="." instance=ExtResource( 5 )]
 margin_left = 120.0
 margin_top = 72.0
 margin_right = 108.192
 margin_bottom = 60.024
+sprite = "luigi"
 
 [node name="choosable_player16" parent="." instance=ExtResource( 5 )]
 margin_left = 152.0
 margin_top = 72.0
 margin_right = 140.192
 margin_bottom = 60.024
+sprite = "tails"
 
 [node name="choosable_player17" parent="." instance=ExtResource( 5 )]
 margin_left = 184.0
 margin_top = 72.0
 margin_right = 172.192
 margin_bottom = 60.024
+sprite = "princess_bubblegum"
 
 [node name="choosable_player18" parent="." instance=ExtResource( 5 )]
 margin_left = 216.0

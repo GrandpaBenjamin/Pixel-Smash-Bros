@@ -16,4 +16,8 @@ var isUnlocked = {
 	"zelda": true,
 	"waluigi": false,
 	"wario": false,
+	"mario": false,
+	"luigi": false,
+	"tails": false,
+	"princess_bubblegum": false,
 }

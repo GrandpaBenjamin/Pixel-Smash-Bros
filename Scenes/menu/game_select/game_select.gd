@@ -15,3 +15,7 @@ func _on_Online_pressed():
 
 func _on_quit_pressed():
 	get_tree().quit()
+
+
+func _on_Button_pressed():
+	get_tree().change_scene("res://Scenes/menu/options/options.tscn")
