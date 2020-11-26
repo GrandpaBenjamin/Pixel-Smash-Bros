@@ -80,6 +80,26 @@ func skin():
 		$Sprite.hframes = 1
 		$Sprite.vframes = 1
 
+func _set_name():
+	if "1" in owner_name:
+		$name.text = "Player 1"
+	elif "2" in owner_name:
+		$name.text = "Player 2"
+	elif "3" in owner_name:
+		$name.text = "Player 3"
+	elif "4" in owner_name:
+		$name.text = "Player 4"
+	elif "5" in owner_name:
+		$name.text = "Player 5"
+	elif "6" in owner_name:
+		$name.text = "Player 6"
+	else:
+		$name.text = ""
+	
+
+func ready():
+	_set_name()
+
 func _physics_process(delta):
 	skin()
 	if can_move:
