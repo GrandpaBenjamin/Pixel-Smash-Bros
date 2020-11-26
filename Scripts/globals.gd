@@ -43,7 +43,7 @@ var conv = {
 	"cooper_trooper": cooper_trooper,
 	"adventure_finn": adventure_finn,
 	"homer": homer,
-	"kunckles": knuckles,
+	"knuckles": knuckles,
 	"krusty": krusty,
 	"link": link,
 	"zelda": zelda,
